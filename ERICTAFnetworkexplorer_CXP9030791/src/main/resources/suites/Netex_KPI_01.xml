@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Netex_KPI_01 - Jawas" preserve-order="true">
+    <test name="CM: NEX: Find all locked cells in the network">
+        <classes>
+            <class name="com.ericsson.nms.pres.taf.test.scenarios.Netex01KpiScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

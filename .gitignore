@@ -1,0 +1,37 @@
+# Eclipse related files
+.settings
+.classpath
+.project
+
+# InteliJ files #
+worskpace.xml
+.idea/
+*.iml
+
+# Build Folders
+target/
+
+/*.launch
+.DS_Store
+.pmd
+test-output
+*.versionsBackup
+
+#Temp Files
+tmp/
+
+#TAF host properties  #commetn out temporarily if new property is needed
+networkExplorer_host.properties
+
+#TAF generated files
+test-output/
+curl.exe
+libeay32.dll
+libssl32.dll
+/run.bat
+
+# Screenshots
+*.png
+
+# Coverage
+ajcore*.txt

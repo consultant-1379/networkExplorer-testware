@@ -1,0 +1,10 @@
+query,attachmentName,datasourceName,netExKpiType,passingCriteriaOfLockedCells,kpiRunCount
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-5k,720,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-15k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-20k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-30k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-40k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-50k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-60k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-70k,1000,10
+select EUtranCellFDD where EUtranCellFDD has attr administrativeState = LOCKED from node type ERBS,Network Explorer KPI Report,netex01KpiResults,netEx-80k,1000,10

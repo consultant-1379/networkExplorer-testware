@@ -1,0 +1,8 @@
+query
+select NetworkElement with attr neType
+select MeContext with attr neType
+select ManagedElement with attr neType
+select ENodeBFunction with attr ENodeBFunctionId
+select EUtranFreqRelation with attr EUtranFreqRelationId
+select EUTranCellFDD with attr EUTranCellFDDId
+select EUtranCellRelation with attr EUtranCellRelationId

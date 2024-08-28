@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Each team will need to update the following section to reflect the
+      correct parent for their test cases -->
+  <parent>
+    <groupId>com.ericsson.nms</groupId>
+    <artifactId>integration</artifactId>
+    <version>15.2.0.32</version>
+  </parent>
+
+    <!-- Each team will need to update the following section with the correct
+        information -->
+    <groupId>com.ericsson.nms.pres.taf</groupId>
+    <artifactId>networkExplorer-testware</artifactId>
+    <version>1.65.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+  <properties>
+    <taf.version>2.62.13</taf.version>
+    <enm-test-library-bom.version>1.2.173</enm-test-library-bom.version>
+    <aspectj.version>1.8.3</aspectj.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <target.java.version>1.7</target.java.version>
+    <tdm-datasource.version>1.0.121</tdm-datasource.version>
+    <data-provider.version>1.0.135</data-provider.version>
+    <allure.version>1.4.4</allure.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <media.category>testware</media.category>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.ericsson.oss.testware.bom</groupId>
+        <artifactId>enm-test-library-bom</artifactId>
+        <version>${enm-test-library-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.ericsson.oss.testware.availability</groupId>
+        <artifactId>data-provider</artifactId>
+        <version>${data-provider.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ericsson.cifwk.taf.testdatamanagement</groupId>
+        <artifactId>tdm-datasource</artifactId>
+        <version>${tdm-datasource.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ericsson.cifwk</groupId>
+        <artifactId>taf-bom</artifactId>
+        <version>${taf.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.ericsson.cifwk.taf</groupId>
+          <artifactId>taf-maven-plugin</artifactId>
+          <version>${taf.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>com.ericsson.cifwk.taf</groupId>
+          <artifactId>taf-allure-maven-plugin</artifactId>
+          <version>${taf.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.1</version>
+          <configuration>
+            <source>${target.java.version}</source>
+            <target>${target.java.version}</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.16</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-junit47</artifactId>
+            <version>2.16</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>com.ericsson.cifwk.taf</groupId>
+        <artifactId>taf-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <tag>networkExplorer-testware-1.56.4</tag>
+  </scm>
+
+  <modules>
+    <module>ERICTAFnetworkexplorer_CXP9030791</module>
+    <module>test-pom-networkExplorer</module>
+  </modules>
+</project>
+

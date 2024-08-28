@@ -1,0 +1,3 @@
+clickAddMore,managedObject,attAndOr,attributeName,criteriaOperator,attributeValue,allowDeleted
+false,EUtranCellFDD,"",physicalLayerSubCellId,=,2,false
+true,EUtranCellFDD,And,tac,=,0,false

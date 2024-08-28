@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Network Explorer - Incisive">
+    <test name="Network Explorer RFA loop">
+        <classes>
+            <class name="com.ericsson.nms.pres.taf.test.scenarios.CoreScenarios"/>
+        </classes>
+    </test>
+</suite>

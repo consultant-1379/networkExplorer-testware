@@ -1,0 +1,4 @@
+query
+"select all objects of type EUtranCellRelation where MeContext has child ManagedElement and ManagedElement has child ENodeBFunction and ENodeBFunction has child EUtranCellFDD and EUtranCellFDD has child EUtranFreqRelation and EUtranFreqRelation has child EUtranCellRelation and EUtranFreqRelation has attr EUtranFreqRelationId = 2 from node %s , node type ERBS"
+
+

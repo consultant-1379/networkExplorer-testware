@@ -1,0 +1,2 @@
+query,itemName,withContextSuffix,sharingPermissions,allowDeleted
+"select all objects of type EUtranCellRelation from node %s where name=1*",scenario5collection,false,Private,false

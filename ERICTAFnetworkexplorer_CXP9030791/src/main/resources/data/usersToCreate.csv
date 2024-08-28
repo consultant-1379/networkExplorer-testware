@@ -1,0 +1,3 @@
+username,firstName,lastName,email,password,enabled,roles,timeout,passwordResetFlag
+NetworkExplorer_ADMIN,test,test,test@test.ie,Enmuser01,true,Network_Explorer_Administrator,30,false
+NetworkExplorer_OPERATOR,test,test,test@test.ie,Enmuser02,true,Network_Explorer_Operator,30,false

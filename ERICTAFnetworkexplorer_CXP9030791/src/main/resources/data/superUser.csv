@@ -1,0 +1,2 @@
+username,firstName,lastName,email,password,enabled,roles,timeout,passwordResetFlag
+NetworkExplorer_STKPI_ADMIN,test,test,test@test.ie,Enmuser03,true,Network_Explorer_Administrator,30,false

@@ -1,0 +1,2 @@
+query,columnHeaders,objectType
+NetworkElement where name = %s,"Name,Node Name",NetworkElement

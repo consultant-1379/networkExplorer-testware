@@ -1,0 +1,2 @@
+query,columnHeaders
+"select all objects of type EUtranCellRelation where MeContext has child ManagedElement and ManagedElement has child ENodeBFunction and ENodeBFunction has child EUtranCellFDD and EUtranCellFDD has child EUtranFreqRelation and EUtranFreqRelation has child EUtranCellRelation and MeContext has attr MeContextId = %s and EUtranFreqRelation has attr EUtranFreqRelationId = 1 from node type ERBS","Name,MO Type,Node Name,Parent MO"

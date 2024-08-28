@@ -1,0 +1,2 @@
+query,itemName,withContextSuffix,sharingPermissions,allowDeleted
+select all objects of type MeContext from node %s,scenario5collection,false,Private,FALSE

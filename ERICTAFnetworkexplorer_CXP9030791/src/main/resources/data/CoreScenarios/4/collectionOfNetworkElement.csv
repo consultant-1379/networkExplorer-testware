@@ -1,0 +1,2 @@
+query,itemName,withContextSuffix,sharingPermissions,allowDeleted,objectType
+select all objects of type NetworkElement from node %s,scenario5collection,false,Private,FALSE,NetworkElement

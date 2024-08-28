@@ -1,0 +1,2 @@
+query,itemName,withContextSuffix,sharingPermissions,allowDeleted
+"select all objects of type ENodeBFunction where MeContext has child ManagedElement and ManagedElement has child ENodeBFunction and MeContext has attr MeContextId = %s from node type ERBS",scenario7savedsearch,false,public,false
